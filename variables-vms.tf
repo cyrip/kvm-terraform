@@ -16,23 +16,50 @@ variable "vm_configs" {
     ip     	= string
   }))
   default = {
-    vm1 = {
-      name   = "uvm1"
-      hostname = "uvm1"
+    m1 = {
+      name   = "kcl3-m1"
+      hostname = "kcl3-m1"
       domain = "codeware.local"
-      memory = 512
-      vcpu   = 1
-      disk_size = "4G"
-      ip     = "192.168.0.51"
-    }
-    vm2 = {
-      name   = "uvm2"
-      hostname = "uvm2"
-      domain = "codeware.local"
-      memory = 512
+      memory = 2048
       vcpu   = 2
-      disk_size = "4G"
-      ip     = "192.168.0.52"
+      disk_size = "16G"
+      ip     = "192.168.0.121"
+    }
+    m2 = {
+      name   = "kcl3-m2"
+      hostname = "kcl3-m2"
+      domain = "codeware.local"
+      memory = 2048
+      vcpu   = 2
+      disk_size = "16G"
+      ip     = "192.168.0.122"
+    }
+    m3 = {   
+      name   = "kcl3-m3"
+      hostname = "kcl3-m3"
+      domain = "codeware.local"
+      memory = 2048
+      vcpu   = 2
+      disk_size = "16G"
+      ip     = "192.168.0.123"
+    }
+    w1 = {
+      name   = "kcl3-w1"
+      hostname = "kcl3-w1"
+      domain = "codeware.local"
+      memory = 2048
+      vcpu   = 2
+      disk_size = "16G"
+      ip     = "192.168.0.124"
+    }
+    w2 = {
+      name   = "kcl3-w2"
+      hostname = "kcl3-w2"
+      domain = "codeware.local"
+      memory = 2048
+      vcpu   = 2
+      disk_size = "16G"
+      ip     = "192.168.0.125"
     }
   }
 }
